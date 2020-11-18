@@ -1,4 +1,11 @@
-body {
+html, body{
+  margin: 0px;
+  padding: 0px;
+}
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   box-sizing: border-box;
   height: 100vh;
   margin: 0;
@@ -10,10 +17,25 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 150px;
 }
-
+*{
+  box-sizing: border-box;
+}
+#root{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+@media screen and (max-width: 560px){
+  body{
+    padding-top: 1px;
+  }
+  #root{
+    height: 100vh;
+  }
 }

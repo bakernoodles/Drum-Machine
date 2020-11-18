@@ -1,0 +1,48 @@
+.drum-pad{
+   display: flex;
+   justify-content: space-between;
+   font-family: 'Economica', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   width: 22%;
+   height: 22%;
+   border-radius: 4px;
+   border: 1px solid white;
+   box-shadow: 1px 1px 4px rgb(195, 255, 251);
+   text-decoration: none;
+   text-shadow: 1px 1px #fFF;
+   font-weight: 500;
+   border: none;
+   height: 20%;
+}
+.hotKey{
+   align-self: flex-end;
+   color: #0081a7;
+   text-transform: uppercase;
+}
+.padContainer{
+   display: flex;
+   flex-direction: row;
+   width: 100%;
+   box-sizing: border-box;
+   padding: 5px;
+   padding: 60px 20px 40px;
+}
+.padGroups{
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+   justify-content: space-evenly;
+}
+
+@media screen and (max-width: 700px){
+   .padContainer{
+      padding-top: 0px;
+   }
+}
+
+@media screen and (max-width: 700px){
+   .padContainer{
+      height: 80%;
+   }
+}
