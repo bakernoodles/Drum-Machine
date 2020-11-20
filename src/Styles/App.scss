@@ -1,10 +1,13 @@
 $color-one: #272626;
 $color-two: #3b3b3b;
 $color-three: #0081a7;
-$color-four: #0081a7;
-$color-five: hsl(4, 82%, 67%);
+$color-four: rgb(124,255,80);
+$color-five: rgb(255,80,124);
 $cornerRadius: 5px;
 /*The main App display and sizing.*/
+*{
+  box-sizing: border-box;
+}
 .Board{
   box-sizing: border-box;
   display: flex;
@@ -15,21 +18,17 @@ $cornerRadius: 5px;
   min-width: 220px;
   width: 100%;
   max-width: 1200px;
-  height: 100vh;
-  max-height: 680px;
-  min-height: 350px;
   border-radius: $cornerRadius;
   font-size: 22px;
-
   box-shadow: 3px 3px 4px #c9c9c9 ;
-  
+  min-height: 400px;
   /*Handles the left panes display and sizing*/
   .leftPane{
     display: flex;
     flex-direction: column;
     border-radius: $cornerRadius;
     width: 220px;
-    
+    padding: 5px 20px;
     .title{
       padding: auto;
       border-radius: $cornerRadius;
@@ -37,7 +36,7 @@ $cornerRadius: 5px;
       text-shadow: 2px 1px #fcfeff;
       text-align: center;
       height: 100px ;
-      
+      width: 100%;
     }
     .logo{
       width: 100%;
@@ -46,13 +45,51 @@ $cornerRadius: 5px;
       max-height: 100px;
       margin: auto;
       vertical-align: middle;
-      margin:5px 10px ;
+      margin:5px 0px ;
+    }
+    #optionsBar{
+      height: 70px;
+      margin-top: 10px;
+      display: flex;
+      flex-direction: column;
     }
   }
 }
-  
-.backgroundColor{
-  background-color: aqua;
+.onBtn{
+  width: 30px;
+  height: 30px;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+.showKeys{
+  width: 30px;
+  height: 30px;
+  margin-bottom: 25px;
+  cursor: pointer;
+}
+.bankContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  h5{
+    margin: 0px;
+  }
+  button{
+    position: relative;
+    background: url('../Assets/flip1.png');
+    background-size: cover;
+    border: none;
+    width: 60px;
+    height: 30px;
+    outline-width: 0;
+    cursor: pointer;
+  }
+}
+.bankTxt{
+  position: relative;
+  letter-spacing: 4px;
+  color: white;
+  text-shadow: 1px 2px $color-three;
 }
 @media screen and (min-width: 700px){
   .leftPane{
@@ -68,16 +105,17 @@ $cornerRadius: 5px;
   }
   .leftPane{
     flex: 1;
-    height: 20%;
+    height: 150px;
     margin: 0px 30px 0px 20px;
     .title{
       background: linear-gradient(90deg, $color-one 14%, $color-two 49%);
-      
     }
   }
-}
-@media screen and (max-height: 500px){
-  .Board{
-    height: 100vh;
+  #optionsBar{
+    justify-content: space-between;
+    flex-direction: row!important;
+  }
+  .showKeys{
+    display: none;
   }
 }
