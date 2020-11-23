@@ -16,6 +16,7 @@ function App() {
       <ButtonsContainer 
         power={power} 
         id="display"
+        hotKey={showKeys}
       />
     </div>
   );
