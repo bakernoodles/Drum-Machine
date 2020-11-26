@@ -46,6 +46,8 @@ $cornerRadius: 5px;
       margin: auto;
       vertical-align: middle;
       margin:5px 0px ;
+      user-select: none;
+      -moz-user-select: none;
     }
     #optionsBar{
       height: 70px;
@@ -91,6 +93,8 @@ $cornerRadius: 5px;
   letter-spacing: 4px;
   color: white;
   text-shadow: 1px 2px $color-three;
+  user-select: none;
+  -moz-user-select: none;
 }
 @media screen and (min-width: 700px){
   .leftPane{

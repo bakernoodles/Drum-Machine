@@ -7,12 +7,13 @@
    min-height: 40px;
    border-radius: 4px;
    border: 1px solid white;
-   box-shadow: 1px 1px 4px rgb(195, 255, 251);
    text-decoration: none;
    text-shadow: 1px 1px #fFF;
    font-weight: 500;
    border: none;
    margin: 1px;
+   -webkit-box-shadow: inset 0px 0px 50px 12px rgba(96,255,227,0.4); 
+   box-shadow: inset 0px 0px 50px 12px rgba(96,255,227,0.4),1px 1px 4px rgb(195, 255, 251);
 }
 .hotKey{
    align-self: flex-end;
