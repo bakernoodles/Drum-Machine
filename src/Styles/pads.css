@@ -14,11 +14,14 @@
    margin: 1px;
    -webkit-box-shadow: inset 0px 0px 50px 12px rgba(96,255,227,0.4); 
    box-shadow: inset 0px 0px 50px 12px rgba(96,255,227,0.4),1px 1px 4px rgb(195, 255, 251);
+   outline: none;
 }
+
 .hotKey{
    align-self: flex-end;
    color: #0081a7;
    text-transform: uppercase;
+   position: fixed;
 }
 .padContainer{
    display: flex;

@@ -11,6 +11,7 @@ const LeftPane = (props) => {
       if(props.power === 'on') props.setPower('off');
       else props.setPower('on');
    }
+   // function that Shows all the button hot keys.
    const showChars = () => {
       if(props.showKeys) props.setShowKeys(false);
       else props.setShowKeys(true);
@@ -28,7 +29,7 @@ const LeftPane = (props) => {
       </div>
       )
    }
-   // If powered on, show full UI
+   // If powered on, show full left-pane UI. logo and options.
    return(
       <div className="leftPane">
          <div className='title'>

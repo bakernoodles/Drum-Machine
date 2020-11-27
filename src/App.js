@@ -3,6 +3,7 @@ import LeftPane from './components/firstPane.js';
 import './Styles/App.scss';
 import ButtonsContainer from './components/ButtonsContainer';
 function App() {
+  // state for power switch, show-keys button.
   const [power, setPower] = useState('on');
   const [showKeys, setShowKeys] = useState(true);
   return (
@@ -16,7 +17,7 @@ function App() {
       <ButtonsContainer 
         power={power} 
         id="display"
-        isShowKeysActive={showKeys}
+        showKeys={showKeys}
       />
     </div>
   );

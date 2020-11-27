@@ -9,9 +9,14 @@ const Buttons = (props) =>{
          key={i}
          className="drum-pad">
             {padData.names[i]}
-            <span className="hotKey"> {padData.key[i]} </span>
+            {props.showKeys ? 
+               <span className="hotKey"> {padData.key[i]} </span> : 
+               <span className="hotKey"> </span> 
+            }
+            
          </button>
-   })
+   });
+    
    return(
       <div className="padGroups">
          {pads}
@@ -22,7 +27,7 @@ const Buttons = (props) =>{
 const ButtonsContainer = (props) => {
    return(
       <div className="padContainer">
-         <Buttons ShowKeys={props.isShowKeysActive}/>
+         <Buttons showKeys={props.showKeys}/>
       </div>
    )
 }
