@@ -5,8 +5,10 @@ import logoOff from '../Assets/logoOff.png';
 import onPng from '../Assets/on.png';
 import offPng from '../Assets/off.png'
 import show from '../Assets/show.png';
+
 const LeftPane = (props) => {
-   //Function that toggles the device ON/OFF. Used by the power button image when clicked.
+
+   // Toggle the device ON/OFF. Used by the power button image when clicked.
    const power = () => {
       if(props.power === true) 
          props.setPower(false);
@@ -14,18 +16,18 @@ const LeftPane = (props) => {
          props.setBank(0)
    }
 
-   // function that Shows all the button hot keys.
+   // Shows all hot keys on the pads.
    const showChars = () => {
+      
       if(props.showKeys) 
          props.setShowKeys(false);
       else 
          props.setShowKeys(true);
    }
    // switches the sound bank (A or B)
-   const switchBank = () => {
+   function switchBank(){
       let bankBtn = document.getElementById('bankButton');
-
-      if(props.bank === 0){
+      if(!props.bank){
          bankBtn.innerHTML = 'B';
          bankBtn.classList.add('moveButton');
          props.setBank(1);
@@ -37,7 +39,7 @@ const LeftPane = (props) => {
       }
    }
 
-   // If the power button is switched off, render a limited UI for the left pane. 
+   // If the power is off, render a limited UI. 
    if(!props.power){
       return(
          <div className="leftPane">
@@ -50,9 +52,8 @@ const LeftPane = (props) => {
          </div>
       )
    }
-   /* If powered on, show full left-pane UI. logo and options. 
-      Contains the logo, power button, 'hide' button, and Bank name/button.
-   */
+   /* Else, must be on. Render UI */
+
    return(
       <div className="leftPane">
          <div className='title'>

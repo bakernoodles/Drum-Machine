@@ -1,7 +1,7 @@
 import {bank1} from '../Assets/bank1';
 import {bank2} from '../Assets/bank2';
 
-// Indexed data for the two banks. Iterate with .map
+// Indexed/mapped data for the two banks. Iterate with .map
 
 // -names               (To display on the pads)
 // -keys                (used for ID's)

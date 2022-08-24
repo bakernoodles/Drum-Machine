@@ -3,12 +3,12 @@ import '../Styles/pads.css';
 import {padData, padData2} from '../Assets/buttonData.js';
 
 // Maps data from buttonData.js and creates an array of button elements.
-// Each button contains a name text on top left, and hotkey text for the bottom left. 
+// Each button contains name text on top left, and hotkey text for the bottom right. 
 
 const Buttons = (props) =>{
    // gets the currently selected bank
    let bank = (props.bank ? padData2 : padData ); 
-   // Event listeners for hotkeys when keys are pressed.
+   // Event listeners for when the hotkeys are pressed.
    useEffect(() => {
       // Function to play a sound when a hotkey is pressed.
       const handleKeyPress = (e) => {
@@ -28,7 +28,7 @@ const Buttons = (props) =>{
       }
    },[bank.hotKeys, props])
    // Power toggle
-   // Mutes all audio elements when power is toggled. 
+   // Mute all audio elements when the power is toggled. 
    useEffect(()=> {
       
       if(props.power){
@@ -60,7 +60,7 @@ const Buttons = (props) =>{
             props.setLastPlayed(playtarget.getAttribute('clipname'));
          }
       } 
-     // Pads return
+      //-
       return (
       <button  
          className= {!props.power ? "drum-pad-off  pads" : "drum-pad pads" }
