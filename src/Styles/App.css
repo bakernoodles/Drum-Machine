@@ -1,0 +1,202 @@
+
+:root{
+  --color-one: #272626;
+  --color-two: #3b3b3b;
+  --color-three: #0081a7;
+  --color-four: rgb(124, 255, 80);
+  --color-five: rgb(255, 77, 121);
+  --cornerRadius: 7px;
+  --mainLight: rgba(96,255,227,0.4);
+  block-size: fit-content;
+}
+*{
+  box-sizing: border-box;
+}
+
+.Board{
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  background: linear-gradient(90deg, var(--color-one) 22%, var(--color-two) 49%);
+  color: var(--color-three);
+  min-width: 237px;
+  width: 100%;
+  max-width: 900px;
+  border: solid .5px rgba(0, 0, 0, 0.096);
+  border-radius: var(--cornerRadius);
+  font-size: 22px;
+  box-shadow: 3px 3px 4px #c9c9c91c ;
+  min-height: 400px;
+  height: 90vh;
+  max-height: 1150px;
+  
+}
+.leftPane{
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  border-radius: var(--cornerRadius);
+  width: 220px;
+  padding: 5px 20px;
+  border-right: solid 1px rgba(0, 0, 0, 0.404);
+  box-shadow: 0px 1px 2px #e6dbdb1a ;
+}
+.title{
+  padding: auto;
+  border-radius: var(--cornerRadius);
+  padding: 0px 0px 10px;
+  text-shadow: 2px 1px #fcfeff;
+  text-align: center;
+  height: 70px ;
+  width: 100%;
+  margin-bottom: 20px;
+}     
+.logo{
+  
+  width: 100%;
+  max-width: 200px;
+  height: 55px;
+  vertical-align: middle;
+  margin: 15px 0px;
+}
+#optionsBar{
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+}
+.onBtn{
+  width: 27px;
+  height: 27px;
+  margin-bottom: 30px;
+  cursor: pointer;
+  border: solid .5px rgba(0, 0, 0, 0.13);
+  border-radius: 3px;
+}
+.onBtn:active{
+  position: relative;
+  top: 2px;
+}
+.showKeys{
+  position: relative;
+  width: 30px;
+  height: 30px;
+  margin-bottom: 25px;
+  cursor: pointer;
+  border: solid .5px rgba(0, 0, 0, 0.13);
+  border-radius: 3px;
+}
+.showKeys:active{
+  margin-left: 1px;
+}
+.bankContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 10px;
+}
+h5{
+  margin: 0px;
+}
+button{
+  position: relative;
+  background-size: cover;
+  border: none;
+  width: 60px;
+  height: 30px;
+  cursor: pointer;
+}
+.bankTxt{
+  position: relative;
+  letter-spacing: 1px;
+  color: #54dfc5;
+  text-shadow: 1px 1px #aa4dc7ab;
+  user-select: none;
+  -moz-user-select: none;
+  font-family:Arial, Helvetica, sans-serif;
+  
+}
+
+.bankButton{
+  background: #54dfc5;
+  border-radius: 3px;
+  width: 31px;
+  height: 20px;
+  color: black;
+  
+}
+.bankBtnSlot{
+  height: 21px;
+  width: 40px;
+  background-color: #272626;
+  border-radius: 2px;
+}
+.bankBtnSlot button{
+ position: relative;
+ top: -8px
+}
+.moveButton {
+  left:  9px;
+  background-color: #e360ff;
+  color: #00382e;
+}
+.bankButton:active{
+  margin-right: 1px;
+}
+@media screen and (min-width: 700px){
+  .leftPane{
+    background: linear-gradient(270deg, var(--color-one) 7%, var(--color-two) 49%);
+  }
+}
+@media screen and (max-width: 700px){
+  .Board{
+    flex-direction: column;
+    min-width: 237px;
+    height: 100vh;
+    border-radius: .5px;
+    border: none;
+  }
+  .leftPane{
+    height: 20vh;
+    margin: 0px 30px 0px 20px;
+  }
+  .title{
+    margin-bottom: 0px;
+    width: 100%;
+  }
+  
+  .bankTxt{
+    font-size: 16px;
+  }
+  .onBtn{
+    width: 25px;
+    height: 25px;
+    margin-bottom: 0px;
+  }
+  #optionsBar{
+    justify-content: space-between;
+    flex-direction: row!important;
+    height: 20px;
+  }
+  /* 
+    Hotkey display button is set to 'none' for mobile devices, as it is not needed. 
+    Left the mobile position settings, in case.
+  */
+  .showKeys{
+    display: none;
+    
+    position:absolute;
+    margin-left: 40px;
+  }
+  .showKeys:active{
+    margin-left: 41px;
+  }
+  .leftPane{
+    border-right: none;
+    border-radius: 4px;   
+    margin: 0px 0px;
+    width: 100%;
+    min-height: 130px;
+    
+  }
+}

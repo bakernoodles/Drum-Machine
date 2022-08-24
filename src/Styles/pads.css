@@ -8,43 +8,106 @@
    border-radius: 4px;
    border: 1px solid white;
    text-decoration: none;
-   text-shadow: 1px 1px #fFF;
+   text-shadow: .5px .5px rgba(255, 255, 255, 0.582);
    font-weight: 500;
    border: none;
    margin: 1px;
    -webkit-box-shadow: inset 0px 0px 50px 12px rgba(96,255,227,0.4); 
-   box-shadow: inset 0px 0px 50px 12px rgba(96,255,227,0.4),1px 1px 4px rgb(195, 255, 251);
+   box-shadow: inset 0px 0px 25px 2px #aa4dc7be,.1px .1px 3px rgba(243, 255, 254, 0.329);
+   cursor: pointer; 
    outline: none;
 }
 
+.pads{
+   background: rgba(96, 255, 226, 0.719);
+}
+.drum-pad-off{
+   display: flex;
+   justify-content: space-between;
+   font-family: 'Economica', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   width: 20%;
+   height: 20%;
+   min-height: 40px;
+   border-radius: 4px;
+   border: 1px solid white;
+   text-decoration: none;
+   text-shadow: .5px .5px rgba(255, 255, 255, 0.582);
+   font-weight: 500;
+   border: none;
+   margin: 1px;
+   -webkit-box-shadow: inset 0px 0px 50px 12px rgba(96,255,227,0.4); 
+   outline: none;
+   cursor: pointer; 
+   box-shadow: inset 0px 0px 30px 2px #aa4dc73b,.1px .1px 3px rgba(243, 255, 254, 0.034);
+   background: rgba(88, 233, 206, 0.719);
+}
+
+.drum-pad span{
+   user-select: none;
+   color: black;
+   font-weight: 600;
+}
+.drum-pad-off span{
+   user-select: none;
+   color: black;
+   font-weight: 600;
+
+}
+.drum-pad:active{
+   background-color: #5bb5df;
+   position: relative;
+   top: 2px;
+}
+.makeActive{
+   background-color: #5bb5df;
+   position: relative;
+   top: 2px;
+}
+.drum-pad-off:active{
+   position: relative;
+   top: 2px;
+}
+
+.disabled{
+   pointer-events: none;
+   cursor: not-allowed;
+   opacity: 0.85;
+   filter: alpha(opacity=85);
+}
 .hotKey{
    align-self: flex-end;
    color: #0081a7;
    text-transform: uppercase;
-   position: fixed;
+   position: flex;
+   align-self: s;
 }
 .padContainer{
    display: flex;
-   flex-direction: row;
+   flex-direction: column;
+   justify-content: space-evenly;
+   align-items: center;
    width: 100%;
-   height: 100vh;
-   max-height: 700px;
-   box-sizing: border-box;
-   padding: 60px 20px;
+   height: 100%;
+   padding: 15px 4px 15px 4px;
+   
 }
 .padGroups{
    display: flex;
    flex-direction: row;
    flex-wrap: wrap;
    justify-content: center;
+   gap: 10px;
    align-items: center;
-   justify-content: space-evenly;
+   height: 95%;   
 }
-
+.lastPlayed{
+   height: 30px;
+   letter-spacing: 3px;
+   color: rgba(127, 255, 249, 0.705);
+}
 @media screen and (max-width: 700px){
    .padContainer{
-      padding-top: 0px;
-      height: 75vh;
+      height: 100vh;
    }
    .hotKey{
       display: none;
