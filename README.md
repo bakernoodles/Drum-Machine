@@ -14,6 +14,8 @@ Made with Javascript, HTML, CSS and React.
 
 ---
 
-This was originally something I started around two years ago. For personal reasons I had stopped programming and left it uncomplete. I once again renewed my passion for Front-End development and decided to finish the project.
+This was originally something I started around two years ago. For personal reasons I had stopped programming and left it unfinished. I am coding again and I've always wanted to finish this app. 
 
-It was a light challenge because after a few years, I had forgotten how I was building the app. Also, I had learned of better approaches to solve some problems. Finishing this app was a good learning experience, and I am glad I decided to finish it. It feels good to be back
+### Issues
+
+I had forgotten how I was building the app so I had problems trying to relearn my code. Also, I had learned of better approaches to solve some problems. Finishing this app was a good learning experience, and I am glad I decided to finish it. 
