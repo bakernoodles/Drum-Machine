@@ -14,6 +14,8 @@ Made with Javascript, HTML, CSS and React.
 
 ---
 
-This was originally something I started around two years ago. For personal reasons I had stopped programming and left it unfinished. I am coding again and I've always wanted to finish this app. 
+Originally something I started around two years ago. For personal reasons, I had stopped programming and left the app unfinished. I am coding again, and I've always wanted to finish this app. 
 
-I had forgotten how I was building the app so I had problems trying to relearn my code. Also, I had learned of better approaches to solve some problems. Finishing this app was a good learning experience, and I am glad I decided to finish it. 
+I had forgotten how I coded the app, so I had to relearn my code. That part was probably the biggest challenge. I have learned a lot since starting this app and now. If I could do this all over, I would not overcomplicate some things in this app. For instance, the amount of nested componants. 
+
+Completing this app was a good learning experience, I am glad I finished it. 🐱‍💻
