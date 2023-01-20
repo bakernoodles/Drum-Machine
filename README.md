@@ -1,6 +1,6 @@
 # Drum-Machine
 
-This is a Drum Machine which plays samples. It Has two audio banks. I have experience with digital audio workstations so making this app was a lot of fun for me.
+This is a Drum Machine that plays samples. It Has two audio banks.
 
 
 ## Technologies Used
@@ -15,3 +15,5 @@ Technologies used:
 
 ![Drum Droid image](DrumDroid.png)
 
+I used to spend a lot of time messing around with audio workstations. So this app was a lot of fun for me!
+Hopefully some of my future projects include the DAW again.
